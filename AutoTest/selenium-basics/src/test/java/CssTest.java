@@ -42,11 +42,14 @@ public class CssTest {
         WebElement continueButton = driver.findElement(By.cssSelector("input[value='Continue']"));
         continueButton.click();
 
-        System.out.println("Number of input fields: " + driver.findElements(By.cssSelector("input.form-control")).size());
+        System.out.println("Number of input fields: "
+                + driver.findElements(By.cssSelector("input.form-control")).size());
 
-        System.out.println("Number of personal information fieds: " + driver.findElements(By.cssSelector("#account input.form-control")).size());
+        System.out.println("Number of personal information fieds: "
+                + driver.findElements(By.cssSelector("#account input.form-control")).size());
 
-
+        System.out.println("Number of elements with class 'form-control': "
+                + driver.findElements(By.cssSelector(".form-control")).size());
 
 
 //            driver.findElement(By.name("search")).sendKeys("MaxBook");
